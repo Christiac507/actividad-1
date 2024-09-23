@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="formu">
+    <h1 id="title">Formulario</h1>
+    <p id="description">Ingresa y completa todos los campos</p>
+    <form action="#" id="survey-form">
+     <fieldset>
+        <label for="nombre" >Nombre
+            <input type="text" id="name-label" placeholder="Ingresa tu nombre:" required>
+        </label>
+        <label for="email" >Email
+            <input type="email" id="email-label" placeholder="Ingresa tu email:" required>
+        </label>
+        <label for="edad" >Edad
+            <input type="number" id="number-label" min="15" max="120" placeholder="Tu edad:" required>
+        </label>
+        <p>Selecciona un rol:</p>
+        <label for="opcion">
+           <select name="selecciona" id="dropdown">
+             <option disabled selected value>Selecciona una opcion</option>
+             <option value="1">Facebook</option>
+             <option value="2">Instagram</option>
+           </select>
+        </label>
+     </fieldset>
+     <fieldset>
+        <p>Escoje una:</p>
+        <label for="user-recomeded">
+            <input type="radio" name="opcion" checked>
+            vendedor
+        </label>
+        <label for="user-recomeded">
+            <input type="radio" name="opcion" checked>
+            empresario
+        </label>
+        <label for="user-recomeded">
+            <input type="radio" name="opcion" checked>
+            otro
+        </label>
+     </fieldset>
+     <fieldset>
+        <p>¿Que te gustaria mejorar?</p>
+        <label >
+            <input type="checkbox"  name="prefer" value="front-end-projects" class="input-chekbox">el cervicio
+        </label>
+        <label>
+            <input type="checkbox"  name="prefer" value="front-end-projects" class="input-chekbox">los precos
+        </label>
+        <label>
+            <input type="checkbox"  name="prefer" value="front-end-projects" class="input-chekbox">nada
+        </label>
+        <label>
+            <input type="checkbox"  name="prefer" value="front-end-projects" class="input-chekbox">otro
+        </label>
+     </fieldset>
+     <fieldset>
+        <label for="comentarios">
+            <p>Deja algun comentario:</p>
+            <textarea name="comentario" id="comentario" placeholder="Comenta"></textarea>
+        </label>
+     </fieldset>
+     <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
